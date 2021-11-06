@@ -1,5 +1,6 @@
 ---
-- host: localhost
+- name: build
+  host: localhost
   gather_facts: true
   become: true
   roles:
