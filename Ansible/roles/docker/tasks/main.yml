@@ -17,6 +17,5 @@
      recreate: true
      ports:
       - "4200:80"
-  vars:
-    ansible_python_interpreter: /bin/python3
+
 
