@@ -3,7 +3,7 @@
   docker_image:
     name: devops
     build:
-      path: /var/lib/jenkins/workspace/devops
+      path: /var/lib/jenkins/workspace/MyappPipline
       pull: no 
       source: build
       force_source: true
