@@ -1,6 +1,6 @@
 ---
 - name: create docker image
-  docker image:
+  docker_image:
     name: devops
     build:
       path: /var/lib/jenkins/workspace/devops
