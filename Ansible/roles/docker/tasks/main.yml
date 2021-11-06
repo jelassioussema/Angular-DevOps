@@ -1,12 +1,12 @@
 ---
-- name: create image docker
+- name: create docker image
   docker image:
     name: devops
     build:
-     path: /var/lib/jenkins/workspace/devops
-     pull: no 
-    source: build
-    force_source: true
+      path: /var/lib/jenkins/workspace/devops
+      pull: no 
+      source: build
+      force_source: true
 -  name: run container docker
    docker_container:
      name: myapp_container
