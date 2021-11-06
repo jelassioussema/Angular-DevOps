@@ -1,6 +1,7 @@
 ---
-	- hosts: localhost
-	  gather_facts: true
-	  become: true
-	  roles:
-	    - {role: build }
+- host: localhost
+  gather_facts: true
+  become: true
+  roles:
+    - {role: build }
+
