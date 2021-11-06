@@ -1,9 +1,7 @@
-localhot ansible_connection=local
+...
 
-[Server]
-localhost
-
-[Server:vars]
-ansible_python_interpreter= /usr/bin/python3
-ansi_user= linux2
-
+hosts:
+  localhost:
+   vars:
+     ansible_connection: local
+     ansible_python_interpreter: "{{ansible_playbook_python}}"
