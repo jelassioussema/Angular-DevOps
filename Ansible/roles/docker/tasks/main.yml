@@ -6,9 +6,8 @@
       path: /var/lib/jenkins/workspace/MyappPipline
       pull: no 
     source: build
+    state: present
     force_source: true
-  vars:
-    ansible_python_interpreter: /bin/python3
 -  name: run container docker
    docker_container:
      name: myapp_container
