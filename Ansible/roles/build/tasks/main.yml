@@ -1,5 +1,5 @@
 ---
 - name: build app
   command: ng build --prod --aot --env:prod
-  PATH: /root/.nvm/versions/node/v14.18.1/bin
+  path: /root/.nvm/versions/node/v14.18.1/bin
 
