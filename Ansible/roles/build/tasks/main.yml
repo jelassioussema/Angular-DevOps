@@ -1,4 +1,5 @@
 ---
 - name: build app
   shell: ng build --prod
+  PATH: /root/.nvm/versions/node/v14.18.1/bin
 
