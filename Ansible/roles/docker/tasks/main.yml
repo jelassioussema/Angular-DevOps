@@ -1,7 +1,7 @@
 ---
 - name: create docker image
   docker_image:
-    name: devops
+    name: jelassioussema/devops
     build:
       path: /var/lib/jenkins/workspace/MyappPipline
       pull: no 
