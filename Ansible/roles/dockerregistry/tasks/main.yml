@@ -1,0 +1,9 @@
+---
+
+- name: Push image to registry
+  docker_image:
+    name: jelassioussema/devops
+    repository: jelassioussema/devops:latest
+    push: yes
+    source: local
+
