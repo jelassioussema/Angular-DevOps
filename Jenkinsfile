@@ -5,7 +5,9 @@ pipeline {
            steps {
                script {
                    checkout([$class: 'GitSCM', branches: [[name: '*/master']],
-                   userRemoteConfigs:[[url: 'https://github.com/jelassioussema/Myapp.git']]])
+                   userRemoteConfigs:[[
+                   credentialsId: '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',
+                   url: 'https://github.com/jelassioussema/Myapp.git']]])
                }
            }
        }
