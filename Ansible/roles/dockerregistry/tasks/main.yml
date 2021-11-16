@@ -1,12 +1,15 @@
 ---
+# tasks file for docker-registry
+- name: Log into DockerHub
+  docker_login:
+    username: jelassioussema
+    password: 193JMT1459a.
+    email: oussema.jelassi1@esprit.tn
+- name: Push to docker hub
+  ansible.builtin.shell: docker push  jelassioussema/devops
 
-
-    
-- name: Push image to registry
+- name: Push to docker hub
   docker_image:
-    name: jelassioussema/devops:latest
+    name: "jelassioussema/devops"
     repository: jelassioussema/devops
     push: yes
-    source: local
-
-
