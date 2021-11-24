@@ -28,7 +28,7 @@ pipeline {
        stage('Push local image to repositroy') {
            steps {
                script {
-               sh "sudo ansible-playbook Ansible/dockerregistry.yml -i Ansible/inventory/host.yml "    
+               sh "sudo ansible-playbook Ansible/docker.yml -i Ansible/inventory/host.yml "    
               	       }
            }
        }
